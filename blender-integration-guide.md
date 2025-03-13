@@ -1,5 +1,6 @@
 # Mac ユーザーの個人的体験：BlenderMCP と Claude.ai の連携で遭遇した問題と解決策
 
+！！この文章は Claude.ai に概要を書いててもらっています！！
 こんにちは！Mac ユーザーとして Claude.ai と Blender を BlenderMCP で連携させようとして、いくつかの壁にぶつかりました。この記事では、実際に遭遇した問題点とその解決策、そして得た教訓を共有します。
 
 ## 遭遇した問題点と解決策
@@ -16,7 +17,7 @@
 
 **解決策：** Blender の「Edit > Preferences > Add-ons」から「Install...」ボタンをクリックしてダウンロードしたファイルを選択するだけでした。そして「Interface: Blender MCP」にチェックを入れて有効化。
 
-### 3. 設定ファイル問題：間違ったJSONを編集していた
+### 3. 設定ファイル問題：間違った JSON を編集していた
 
 これが一番厄介でした。README の指示通りに「developer_settings.json」を編集したのに、ハンマーアイコンが全然表示されない！何度 Claude.ai を再起動しても変わらず...
 
@@ -27,9 +28,7 @@
   "mcpServers": {
     "blender": {
       "command": "uvx",
-      "args": [
-        "blender-mcp"
-      ]
+      "args": ["blender-mcp"]
     }
   }
 }
